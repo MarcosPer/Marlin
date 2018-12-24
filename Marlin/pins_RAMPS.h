@@ -223,7 +223,7 @@
 // Heaters / Fans
 //
 #ifndef MOSFET_D_PIN
-  #define MOSFET_D_PIN     -1
+  #define MOSFET_D_PIN     7
 #endif
 #ifndef RAMPS_D8_PIN
   #define RAMPS_D8_PIN      8
