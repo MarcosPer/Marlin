@@ -454,7 +454,13 @@ static void lcd_implementation_init(
     lcd.backlight();
 
   #else
+
+  lcd.command(0x2c); // Function set: 4 bit mode, 2 line mode, enable RE bit
+  lcd.command(0x09); // display control: 5x8 font mode, enable 4 line mode (ignores 2 line mode)
+  lcd.command(0x28); // Function set: 4 bit mode, disable RE bit
     lcd.begin(LCD_WIDTH, LCD_HEIGHT);
+  lcd.setRowOffsets(0x00,0x20,0x40,0x60);
+
   #endif
 
   lcd_set_custom_characters(
