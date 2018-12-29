@@ -615,7 +615,7 @@
  */
  //Las poleas de la anet son de 16 
  //Los husillos diametro 8 paso 2*4 => 8mm vuelta
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 446 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 428.84 }
 
 /**
  * Default Max Feed Rate (mm/s)
